@@ -1,0 +1,63 @@
+server:
+  port: 8055
+knife4j:
+  enableAggregation: true
+  nacos:
+    enable: true
+    serviceUrl: http://nacos.server:8848/nacos/
+    routes:
+      - name: 系统对接(后端使用)(system-exchange)
+        namespaceId: 00c72cc8-175a-4219-b114-cdf4444e7fa5
+        serviceName: system-exchange
+        location: /v2/api-docs?group=system-exchange
+        servicePath: /
+      - name: 字典服务(gemp-dic)
+        namespaceId: 00c72cc8-175a-4219-b114-cdf4444e7fa5
+        serviceName: gemp-dic
+        location: /v2/api-docs?group=gemp-dic
+        servicePath: /
+      - name: 文件服务(gemp-file)
+        namespaceId: 00c72cc8-175a-4219-b114-cdf4444e7fa5
+        serviceName: gemp-file
+        location: /v2/api-docs?group=gemp-file
+        servicePath: /
+      - name: 用户服务(gemp-user)
+        namespaceId: 00c72cc8-175a-4219-b114-cdf4444e7fa5
+        serviceName: gemp-user
+        location: /v2/api-docs?group=gemp-user
+        servicePath: /
+      - name: 安全生产(gemp-sp)
+        namespaceId: 00c72cc8-175a-4219-b114-cdf4444e7fa5
+        serviceName: gemp-sp
+        location: /v2/api-docs?group=gemp-sp
+        servicePath: /
+      - name: 调度服务(gemp-duty)
+        namespaceId: 00c72cc8-175a-4219-b114-cdf4444e7fa5
+        serviceName: gemp-duty
+        location: /v2/api-docs?group=gemp-duty
+        servicePath: /
+      - name: 案例管理(gemp-knowledge)
+        namespaceId: 00c72cc8-175a-4219-b114-cdf4444e7fa5
+        serviceName: gemp-knowledge
+        location: /v2/api-docs?group=gemp-knowledge
+        servicePath: /
+      - name: 资源服务(gemp-data)
+        namespaceId: 00c72cc8-175a-4219-b114-cdf4444e7fa5
+        serviceName: gemp-data
+        location: /v2/api-docs?group=gemp-data
+        servicePath: /
+      - name: 预案服务(gemp-plan)
+        namespaceId: 00c72cc8-175a-4219-b114-cdf4444e7fa5
+        serviceName: gemp-plan
+        location: /v2/api-docs?group=gemp-plan
+        servicePath: /
+      - name: 知识库服务(gemp-extend)
+        namespaceId: 00c72cc8-175a-4219-b114-cdf4444e7fa5
+        serviceName: gemp-extend
+        location: /v2/api-docs?group=gemp-extend
+        servicePath: /
+      - name: 系统对接(前端使用)(gemp-exchange)
+        namespaceId: 00c72cc8-175a-4219-b114-cdf4444e7fa5
+        serviceName: gemp-exchange
+        location: /v2/api-docs?group=gemp-exchange
+        servicePath: /
